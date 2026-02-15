@@ -165,7 +165,7 @@ function Home() {
                     {/* <Link to="/blogs" className='button-style hover:cursor-pointer text-white'>Read my Blogs bro</Link> */}
                 </div>
                 <div className="blog-sec_right flex justify-center items-center">
-                    <img src={BlogImage} alt="blog image" className='w-[50%]' />
+                    <img src={BlogImage} alt="blog" className='w-[50%]' />
                 </div>
                 <img src={pattern} alt="pattern" className='absolute bottom-40 -left-40 md:-bottom-32 md:-left-10 w-80' />
             </section>
