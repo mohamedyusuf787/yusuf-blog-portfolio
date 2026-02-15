@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import auth from "../config/firebase.js"
 
 function Login() {
@@ -14,7 +14,6 @@ function Login() {
             if(user){
                 navigate("/")
             }
-
         })
     }, []);
 

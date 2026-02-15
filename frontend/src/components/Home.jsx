@@ -14,7 +14,7 @@ import BlogImage from "../assets/blog-img.png"
 import pattern from "../assets/dots-pattern.png"
 import weatherapp from "../assets/weatherapp-img.png"
 import { FaArrowRight } from 'react-icons/fa6';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import GalaxyBackground from './GalaxyBackground'
 import Stats from './Stats'
 import Contact from './Contact'
@@ -82,14 +82,14 @@ function Home() {
 
                 {/* RIGHT – SCROLLING */}
                 <div className="md:w-2/3 grid grid-cols-2 gap-10">
-                    <img src={html} className="w-full" />
-                    <img src={css} className="w-full" />
-                    <img src={js} className="w-full" />
-                    <img src={react} className="w-full" />
-                    <img src={DB} className="w-full" />
-                    <img src={node} className="w-full" />
-                    <img src={python} className="w-full" />
-                    <img src={angular} className="w-full" />
+                    <img src={html} className="w-full" alt='html' />
+                    <img src={css} className="w-full" alt='css' />
+                    <img src={js} className="w-full" alt='js' />
+                    <img src={react} className="w-full" alt='react' />
+                    <img src={DB} className="w-full" alt='bd' />
+                    <img src={node} className="w-full" alt='node' />
+                    <img src={python} className="w-full" alt='python' />
+                    <img src={angular} className="w-full" alt='angular' />
                 </div>
 
             </div>

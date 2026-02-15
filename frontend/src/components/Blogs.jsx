@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import auth from "../config/firebase"
 import axios from "axios"
 import Footer from './common/Footer';
