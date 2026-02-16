@@ -39,6 +39,9 @@ const blogSchema = new mongoose.Schema({
 const Blog = mongoose.model('Blog', blogSchema);
 
 // Routes
+app.get("/", (req, res) => res.send("Backend OK"));
+
+
 app.get('/api/blogs', async (req, res) => {
   try {
     const blogs = await Blog.find({});
