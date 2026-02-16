@@ -75,12 +75,12 @@ function Home() {
             <div className="stack-section m-2 flex flex-col gap-16 px-4 md:flex-row ">
 
                 {/* LEFT – STICKY */}
-                <div className="flex flex-col md:w-1/3 md:sticky top-52 h-fit">
+                <div className="flex flex-col items-center md:items-start md:w-1/3 md:sticky top-52 h-fit">
                     <h1 className="text-white text-4xl font-bold  anton-reg text-nowrap">My Stack</h1>
-                    <p className="text-gray-400 mt-4">
+                    <p className="text-gray-400 mt-4 text-center md:text-left">
                         A modern stack focused on performance, scalability, and maintainability
                     </p>
-                    <button onClick={handleScroll} className="button-style mt-6">Contact now</button>
+                    <button onClick={handleScroll} className="button-style mt-2">Contact now</button>
                 </div>
 
                 {/* RIGHT – SCROLLING */}
@@ -100,7 +100,7 @@ function Home() {
             <img src={skills} alt="Skills" className="mx-10 w-[50%] mt-4" />
 
             {/* projects sectino */}
-            <div className="project-section mt-10 bg-white ">
+            <div className="project-section flex flex-col items-center mt-10 bg-white ">
                 <h1 className="text-black text-4xl font-bold  anton-reg p-10 text-nowrap md:text-center">My Projects</h1>
 
                 <div className="project-cards px-2 pb-10 flex flex-col md:flex-row md:justify-evenly  flex-wrap gap-4">
@@ -158,8 +158,8 @@ function Home() {
             </div>
 
             {/* blog section */}
-            <section className='blog-section relative flex flex-col-reverse text-center justify-between items-center mx-8 py-8 md:flex-row md:mx-10 md:px-10 md:text-left overflow-hidden'>
-                <div className="blog-sec_left flex flex-col items-center gap-2 z-10">
+            <section className='blog-section relative flex flex-col-reverse text-center justify-between items-center mx-0  py-8 md:flex-row md:mx-10 md:px-10 md:text-left overflow-hidden'>
+                <div className="blog-sec_left flex flex-col items-center gap-2 md:items-start z-10">
                     <h1 className='anton-reg font-bold text-3xl text-white'>Insights & Articles</h1>
                     <p className='text-gray-500'>Sharing my learnings in web development, UI/UX, and modern technologies.</p>
                     <button onClick={() => navigate('/blogs')} className='button-style text-white'>
