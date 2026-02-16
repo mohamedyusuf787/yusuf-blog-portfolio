@@ -12,11 +12,19 @@ app.use(cors())
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/blogDB').then(()=>{
-    console.log("Connection Successfull")
-})
+// mongoose.connect('mongodb://localhost:27017/blogDB').then(()=>{
+//     console.log("Connection Successfull")
+// })
 
 
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log("MongoDB connected");
+  })
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
+  });
+  
 // Define Schema
 const blogSchema = new mongoose.Schema({
   newTitle: String,

@@ -15,7 +15,7 @@ function Login() {
                 navigate("/")
             }
         })
-    }, []);
+    }, [navigate]);
 
     const handleLogin = (e) => {
         e.preventDefault();

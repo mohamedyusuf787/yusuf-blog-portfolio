@@ -31,7 +31,7 @@ function Blogs() {
         }).catch(() => {
             console.log("Error fetching data")
         })
-    }, [])
+    }, [blogs])
 
 
     const [newTitle, setNewTitle] = useState('');
