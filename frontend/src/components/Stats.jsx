@@ -7,7 +7,7 @@ const Stats = () => {
 
   return (
     <>
-      <section className="my-10">
+         <section className="my-10">
         <h1 className="anton-reg text-white text-4xl font-bold text-center mt-10">Impact in Numbers</h1>
         <div className="cards-section mx-10 flex items-center justify-center">
 
@@ -22,7 +22,7 @@ const Stats = () => {
 
             <div className="bg-[#121212] border border-yellow-500 p-6 rounded-xl w-[220px] md:w-[300px]">
               <h2 className="text-white text-4xl font-bold">
-                {inView && <CountUp end={4} duration={3} />}
+                {inView && <CountUp end={1} duration={3} />}
               </h2>
               <p className="text-gray-400 mt-2">Years Hands-On Experience</p>
             </div>

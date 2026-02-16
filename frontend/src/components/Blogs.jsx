@@ -9,6 +9,11 @@ function Blogs() {
     const [admin,setAdmin]=useState(false);
 
     // it call only once when page refresh
+
+useEffect(()=>{
+    window.scrollTo(0,0);
+},[])
+
     useEffect(() => {
         auth.onAuthStateChanged((user)=>{
             if(user){
@@ -24,7 +29,6 @@ function Blogs() {
             }
         })
 
-        window.scrollTo(0,0);
         axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs").then((res) => {
             console.log(res.data)
             setBlogs(res.data)
