@@ -68,16 +68,16 @@ function Blogs() {
 
 
         const likes = 0
-            axios.post("https://yusuf-blog-portfolio.onrender.com/api/blogs", { newTitle, date, newContent, likes }).then((res) => {
-                console.log(res.data)
+        axios.post("https://yusuf-blog-portfolio.onrender.com/api/blogs", { newTitle, date, newContent, likes }).then((res) => {
+            console.log(res.data)
 
-                axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs").then((res) => {
-                    console.log(res.data)
-                    setBlogs(res.data)
-                }).catch(() => {
-                    console.log("Error fetching data")
-                })
-            });
+            axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs").then((res) => {
+                console.log(res.data)
+                setBlogs(res.data)
+            }).catch(() => {
+                console.log("Error fetching data")
+            })
+        });
 
 
         setNewTitle('');
