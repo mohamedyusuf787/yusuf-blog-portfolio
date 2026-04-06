@@ -14,28 +14,33 @@ function Blogs() {
         window.scrollTo(0, 0);
     }, [])
 
-    useEffect(() => {
-        auth.onAuthStateChanged((user) => {
-            if (user) {
-                if (user.uid === "04uyCr7i3wcz4FwRs8sYzfKPL0w2") {
-                    setAdmin(true)
-                    console.log("you are admin")
-                    console.log(blogs)
-                }
-                else {
-                    setAdmin(false)
-                    console.log("Not an admin")
-                }
-            }
-        })
+    const fetchBlogs = async () => {
+        try {
+            const res = await axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs");
+            console.log(res.data);
+            setBlogs(res.data);
+        } catch {
+            console.log("Error fetching data");
+        }
+    };
 
-        axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs").then((res) => {
-            console.log(res.data)
-            setBlogs(res.data)
-        }).catch(() => {
-            console.log("Error fetching data")
-        })
-    }, [])
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((user) => {
+            if (user?.uid === "04uyCr7i3wcz4FwRs8sYzfKPL0w2") {
+                setAdmin(true);
+                console.log("you are admin");
+            } else {
+                setAdmin(false);
+                console.log("Not an admin");
+            }
+        });
+
+        return () => unsubscribe(); //cleanup
+    }, []);
+
+    useEffect(() => {
+        fetchBlogs();
+    }, []);
 
 
     const [newTitle, setNewTitle] = useState('');
