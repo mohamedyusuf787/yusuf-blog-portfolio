@@ -53,7 +53,7 @@ function Home() {
                         </p>
                         <div className="cta-btns flex flex-col gap-2 justify-center items-center md:flex-row lg:justify-start">
                             <button onClick={handleScroll} className='button-style mt-2'>Contact Me</button>
-                           <a target='blank' href="https://drive.google.com/file/d/1IdLQsPT2Uw3L8kPGM8YHL5AgXblYBC_a/view?usp=drive_link"><button className='button-secondary mt-2'>Resume</button></a> 
+                            <a target='blank' href="https://drive.google.com/file/d/1IdLQsPT2Uw3L8kPGM8YHL5AgXblYBC_a/view?usp=drive_link"><button className='button-secondary mt-2'>Resume</button></a>
                         </div>
                     </div>
                     <img src={profile} alt="profile-img" className='profile w-[60%] m-8 md:w-[20%]' />
@@ -111,9 +111,9 @@ function Home() {
                         <p className="text-white text-sm">A bulk email system that allows users to send personalized emails to multiple recipients with delivery status and error handling.
                             Tech Stack:React, Node.js, Express, MongoDB, JWT</p>
                         <div className="project-card_btns flex gap-2 justify-between items-center mt-2">
-                         <a href="https://github.com/mohamedyusuf787/bulkmailer" target='blank'>    <button className="button-secondary">Git repository</button></a>
+                            <a href="https://github.com/mohamedyusuf787/bulkmailer" target='blank'>    <button className="button-secondary">Git repository</button></a>
                             <div className="arrowIcon w-fit bg-yellow-400 rounded-full p-2 hover:-rotate-[40deg] ease-out duration-300 cursor-pointer"  >
-                             <a href="https://bulkmailer-sepia.vercel.app/BulkMail" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a> 
+                                <a href="https://bulkmailer-sepia.vercel.app/BulkMail" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a>
                             </div>
                         </div>
                     </div>
@@ -124,9 +124,9 @@ function Home() {
                         <p className="text-white text-sm">A weather application that fetches live data using APIs to display current conditions, temperature, and forecasts based on user location.
                             Tech Stack:React, Node.js, Express, MongoDB, JWT</p>
                         <div className="project-card_btns flex gap-2 justify-between items-center mt-2">
-                         <a href="https://github.com/mohamedyusuf787/Weather-Report" target='blank'>    <button className="button-secondary">Git repository</button></a>
+                            <a href="https://github.com/mohamedyusuf787/Weather-Report" target='blank'>    <button className="button-secondary">Git repository</button></a>
                             <div className="arrowIcon w-fit bg-yellow-400 rounded-full p-2 hover:-rotate-[40deg] ease-out duration-300 cursor-pointer"  >
-                             <a href="https://weather-report-eight-pi.vercel.app/" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a> 
+                                <a href="https://weather-report-eight-pi.vercel.app/" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a>
                             </div>
                         </div>
 
@@ -137,9 +137,9 @@ function Home() {
                         <p className="text-white text-sm">A pixel-perfect Netflix login page clone focused on UI accuracy, responsiveness, and form validation.
                             Tech Stack:React, Node.js, Express, MongoDB, JWT</p>
                         <div className="project-card_btns flex gap-2 justify-between items-center mt-2">
-                         <a href="https://github.com/mohamedyusuf787/netflix-login-signup" target='blank'>    <button className="button-secondary">Git repository</button></a>
+                            <a href="https://github.com/mohamedyusuf787/netflix-login-signup" target='blank'>    <button className="button-secondary">Git repository</button></a>
                             <div className="arrowIcon w-fit bg-yellow-400 rounded-full p-2 hover:-rotate-[40deg] ease-out duration-300 cursor-pointer"  >
-                             <a href="https://netflix-plum-five.vercel.app/" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a> 
+                                <a href="https://netflix-plum-five.vercel.app/" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a>
                             </div>
                         </div>
                     </div><div className="card-1 bg-black rounded-md  w-full md:w-[40%] p-4">
@@ -148,9 +148,9 @@ function Home() {
                         <p className="text-white text-sm">A simple e-commerce website showcasing products with category filtering, cart functionality, and a user-friendly shopping experience.
                             Tech Stack:React, Node.js, Express, MongoDB, JWT</p>
                         <div className="project-card_btns flex gap-2 justify-between items-center mt-2">
-                         <a href="https://github.com/mohamedyusuf787/Nostra_website" target='blank'>    <button className="button-secondary">Git repository</button></a>
+                            <a href="https://github.com/mohamedyusuf787/Nostra_website" target='blank'>    <button className="button-secondary">Git repository</button></a>
                             <div className="arrowIcon w-fit bg-yellow-400 rounded-full p-2 hover:-rotate-[40deg] ease-out duration-300 cursor-pointer"  >
-                             <a href="https://mohamedyusuf787.github.io/Nostra_website/index.html" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a> 
+                                <a href="https://mohamedyusuf787.github.io/Nostra_website/index.html" target='blank'>  <FaArrowRight className=" text-black text-xl" /></a>
                             </div>
                         </div>
                     </div>

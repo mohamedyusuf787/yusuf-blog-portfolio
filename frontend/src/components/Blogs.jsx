@@ -90,7 +90,7 @@ useEffect(()=>{
     return (
         <div className="blog-section pt-14">
             <div className="blog-headings flex flex-col gap-3 items-center  mb-14 px-4">
-            <h2 className="text-center text-5xl font-bold border text-white border-red-600">Latest  <span className='text-orange-400 text-center'>Blogs</span> 📚</h2>
+            <h2 className="text-center text-5xl font-bold text-white ">Latest  <span className='text-orange-400 text-center'>Blogs</span> 📚</h2>
             <p className='text-gray-400 text-center'>Sharing my learnings, experiments, and insights from building modern web applications.</p>
 </div>
             {/* Blog creation form */}
