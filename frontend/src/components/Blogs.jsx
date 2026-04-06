@@ -75,7 +75,7 @@ function Blogs() {
                 console.log(res.data)
                 setBlogs(res.data)
             }).catch(() => {
-                console.log("Error fetching data")
+                console.log("Error fetching data after submit the new blog")
             })
         });
 
