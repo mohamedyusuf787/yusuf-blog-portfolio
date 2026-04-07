@@ -53,7 +53,7 @@ function Home() {
                         </p>
                         <div className="cta-btns flex flex-col gap-2 justify-center items-center md:flex-row lg:justify-start">
                             <button onClick={handleScroll} className='button-style mt-2'>Contact Me</button>
-                            <a target='blank' href="https://drive.google.com/file/d/1IdLQsPT2Uw3L8kPGM8YHL5AgXblYBC_a/view?usp=drive_link"><button className='button-secondary mt-2'>Resume</button></a>
+                            <a target='blank' href="https://drive.google.com/file/d/1qDwEDVKmnlqK5YoIoxHMfFwAQES3rY7w/view?usp=sharing"><button className='button-secondary mt-2'>Resume</button></a>
                         </div>
                     </div>
                     <img src={profile} alt="profile-img" className='profile w-[60%] m-8 md:w-[20%]' />
@@ -163,7 +163,7 @@ function Home() {
                     <h1 className='anton-reg font-bold text-3xl text-white'>Insights & Articles</h1>
                     <p className='text-gray-500'>Sharing my learnings in web development, UI/UX, and modern technologies.</p>
                     <button onClick={() => navigate('/blogs')} className='button-style text-white'>
-                        Read my Blogs bro</button>
+                        Read my Blogs</button>
                     {/* <button onSubmit="/blogs" className='button-style text-white hover:cursor-pointer'>blogs</button> */}
                     {/* <Link to="/blogs" className='button-style hover:cursor-pointer text-white'>Read my Blogs bro</Link> */}
                 </div>
