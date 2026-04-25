@@ -124,7 +124,7 @@ function Blogs() {
                 </div> : ""}
 
             {
-                loading ? <p>Loaidng....</p> :
+                loading ? <p className='text-white text-center my-4'>My Blogs are Loading....</p> :
                     <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto my-10 px-4">
                         {
 
