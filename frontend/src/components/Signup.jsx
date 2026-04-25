@@ -31,7 +31,8 @@ function Signup() {
         }
 
         // Simulate user registration process
-        createUserWithEmailAndPassword(auth,email,password).then((res)=>{
+        createUserWithEmailAndPassword(auth,email,password)
+        .then((res)=>{
             console.log(res)
         })
         .catch((err)=>{

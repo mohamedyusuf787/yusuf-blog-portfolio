@@ -7,6 +7,11 @@ function Blogs() {
 
     const [blogs, setBlogs] = useState([]);
     const [admin, setAdmin] = useState(false);
+    const [newTitle, setNewTitle] = useState('');
+    const [newContent, setNewContent] = useState('');
+    const [loading, setLoading] = useState(true)
+
+
 
     // it call only once when page refresh
 
@@ -19,6 +24,7 @@ function Blogs() {
             const res = await axios.get("https://yusuf-blog-portfolio.onrender.com/api/blogs");
             console.log(res.data);
             setBlogs(res.data);
+            setLoading(false)
         } catch {
             console.log("Error fetching data");
         }
@@ -41,10 +47,6 @@ function Blogs() {
     useEffect(() => {
         fetchBlogs();
     }, []);
-
-
-    const [newTitle, setNewTitle] = useState('');
-    const [newContent, setNewContent] = useState('');
 
 
     const handleLike = async (blog_id) => {
@@ -121,17 +123,24 @@ function Blogs() {
                     </form>
                 </div> : ""}
 
-            <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto my-10 px-4">
-                {blogs.map((blog) => (
-                    <div key={blog._id} className="blog-post mb-8 p-6 bg-white shadow-lg rounded-lg">
-                        <h3 className="blog-title font-semibold text-2xl text-gray-800 mb-3">{blog.newTitle}</h3>
-                        <p className="blog-date text-gray-400 text-sm mb-4">{blog.date}</p>
-                        <p className="blog-content text-gray-600 mb-4">{blog.newContent}</p>
-                        <span className="text-blue-500 cursor-pointer" onClick={() => handleLike(blog._id)}>Like</span>
-                        <span className="ml-2">{blog.likes} Likes</span>
+            {
+                loading ? <p>Loaidng....</p> :
+                    <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto my-10 px-4">
+                        {
+
+                            blogs.map((blog) => (
+                                <div key={blog._id} className="blog-post mb-8 p-6 bg-white shadow-lg rounded-lg">
+                                    <h3 className="blog-title font-semibold text-2xl text-gray-800 mb-3">{blog.newTitle}</h3>
+                                    <p className="blog-date text-gray-400 text-sm mb-4">{blog.date}</p>
+                                    <p className="blog-content text-gray-600 mb-4">{blog.newContent}</p>
+                                    <span className="text-blue-500 cursor-pointer" onClick={() => handleLike(blog._id)}>Like</span>
+                                    <span className="ml-2">{blog.likes} Likes</span>
+                                </div>
+                            ))}
                     </div>
-                ))}
-            </div>
+            }
+
+
 
             <Footer />
         </div>

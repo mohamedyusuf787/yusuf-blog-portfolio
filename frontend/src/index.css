@@ -14,21 +14,32 @@ body {
   font-style: normal;
 }
 
-.hero-content img {
-  /* Use 'forwards' so it stays at the end position */
-  animation: slideLeft 1s linear forwards; 
-  display: block; /* Ensures the image behaves predictably */
+.scroll-wrapper{
+  overflow-x: hidden;
+  padding:20px 0px;
+}
+.scroll-track{
+  display: flex;
+  gap: 20px;
 }
 
-@keyframes slideLeft {
-  0% {
-    /* Start 100px to the right of its original spot */
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    /* Move to its final natural position */
+.scroll-wrapper:hover .scroll-track{
+  animation-play-state: paused;
+    transition: ease-out linear;
+
+}
+.scroll-track img{
+  transition: transform ease-out 0.6s;
+}
+.scroll-track img:hover{
+  transform: scale(1.1);
+}
+
+@keyframes scroll{
+  from{
     transform: translateX(0);
-    opacity: 1;
+  }
+  to{
+    transform: translateX(var(--move));
   }
 }
