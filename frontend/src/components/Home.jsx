@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import "../index.css"
 import profile from "../assets/profile.png"
 import angular from "../assets/angular-img.png"
@@ -14,10 +14,8 @@ import BlogImage from "../assets/blog-img.png"
 import pattern from "../assets/dots-pattern.png"
 import weatherapp from "../assets/weatherapp-img.png"
 import netflixapp from "../assets/netflixapp-img.png"
-import bulkmailer from "../assets/bulkmailer-img.png"
 import civicpulse from "../assets/civicpulse-img.png"
 import novacart from "../assets/novacart-img.png"
-import nostra from "../assets/nostra-img.png"
 import aws from "../assets/AWS_Academy_Graduate_Certificate_page-0001.jpg"
 import mern from "../assets/mohamed-yusuf-mern-stack-certificate_page-0001.jpg"
 import uiux from "../assets/ui ux_course_completion_certificate-1.png"
@@ -231,7 +229,7 @@ function Home() {
 
             {/* contactus section */}
             <Contact />
-            
+
             {/* footer section */}
             <Footer />
 
